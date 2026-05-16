@@ -1,0 +1,16 @@
+Please refactor and expand the `san_francisco_crime_V2.ipynb` notebook. The dataset is a San Francisco crime CSV. Perform the following tasks in Python using pandas, scikit-learn, folium, matplotlib, and seaborn:
+
+Phase 1: Data Cleaning & Visualization Optimizations
+1. Data Cleaning: Handle missing (NaN) values in the `IncidntNum` column appropriately.
+2. Data Type Optimization: Convert categorical columns (e.g., `Category`, `PdDistrict`) to the pandas 'category' dtype to save memory and improve performance.
+3. Date Handling: Replace the current string-slicing method for dates with `pd.to_datetime()` on the `Date` column for proper time-series formatting.
+4. Map Visualization: Refactor the existing Folium map. Replace the loop that draws individual `CircleMarker`s with a `folium.plugins.MarkerCluster` or a `HeatMap` to handle large amounts of data points without visual clutter.
+5. Statistical Charts: Create Seaborn/Matplotlib bar charts and countplots to visualize the distribution of crimes by `Category` and by `DayOfWeek`.
+
+Phase 2: Machine Learning & Feature Engineering
+6. Feature Engineering: Extract the hour from the `Time` column and create a new 'Time_of_Day' categorical feature (e.g., dawn, morning, afternoon, night).
+7. Spatial Clustering (Hotspots): Implement a DBSCAN clustering algorithm on the `X` and `Y` coordinates to automatically identify dense crime hotspots (add the cluster labels as a new column, ignoring noise).
+8. NLP & Text Mining: Perform basic text preprocessing on the `Descript` column (lowercase, remove punctuation and common stop words) and generate a WordCloud visualization.
+9. Predictive Modeling: Build and train a classification model (using RandomForestClassifier or XGBoost) to predict the crime `Category` based on features like time of day, day of the week, and coordinates.
+
+Please ensure the code is clean, properly commented, and maintains the structure of a Jupyter Notebook.

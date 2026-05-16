@@ -1,0 +1,24 @@
+15 javaslat a san_francisco_crime.ipynb fejlesztésére:
+
+Adatkezelés és Tisztítás
+1. Hiányzó értékek kezelése: Az IncidntNum oszlop hiányzó értékeinek vizsgálata és kezelése.
+2. Dátumtípus konverzió: pd.to_datetime() használata a string szeletelés helyett a rugalmasabb időelemzésért.
+3. Adattípusok optimalizálása: A kategóriák (Category, PdDistrict) 'category' típusra konvertálása a hatékonyság érdekében.
+4. Koordináták ellenőrzése: Irreális koordináták szűrése a vizualizáció pontossága végett.
+
+Vizualizáció (Matplotlib & Seaborn)
+5. Seaborn használata: Szebb és informatívabb statisztikai grafikonok (countplot, heatmap) készítése.
+6. Idősoros elemzés: A bűncselekmények számának alakulása naponként/óránként.
+7. Heti szezonalitás: Eloszlás vizsgálata a hét napjai szerint.
+8. Kategóriák szerinti megoszlás: Top 10 bűncselekmény-típus horizontális bar charton.
+
+Térképes elemzés (Folium)
+9. Heatmap (Hőtérkép): folium.plugins.HeatMap használata a gócpontok azonosítására.
+10. Marker Cluster: Pontok csoportosítása a térkép átláthatósága érdekében.
+11. Interaktív Popupok: Adatok (típus, időpont) megjelenítése kattintásra a térképen.
+
+Dokumentáció és Struktúra
+12. Markdown magyarázatok: Az elemzés lépéseinek és következtetéseinek szöveges kifejtése.
+13. Requirements.txt: A függőségek listázása a reprodukálhatóságért.
+14. Fejezetek kialakítása: Logikus struktúra (Beolvasás -> Tisztítás -> EDA -> Vizualizáció -> Összegzés).
+15. Hibakezelés: Ellenőrzések beépítése (pl. fájl létezésének vizsgálata).
