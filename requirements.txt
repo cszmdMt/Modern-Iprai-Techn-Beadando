@@ -9,3 +9,4 @@ uvicorn
 pyyaml
 python-dotenv
 wordlcoud
+xgboost
