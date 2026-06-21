@@ -1,4 +1,4 @@
-﻿pandas
+pandas
 numpy
 matplotlib
 seaborn
@@ -8,5 +8,5 @@ fastapi
 uvicorn
 pyyaml
 python-dotenv
-wordlcoud
+wordcloud
 xgboost
